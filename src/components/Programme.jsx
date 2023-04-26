@@ -11,9 +11,8 @@ const Programme = () => {
           <p>{element.type}</p>
           <ul>
             <h3>{element.duration}</h3>
-
-            {<li>{element.isUnseen ? "Inédit" : ""}</li>}
-            {<li>{element.direct ? "Direct" : ""}</li>}
+            {element.isUnseen ? <li>{"Inédit"}</li> : ""}
+            {element.direct ? <li>{"Direct"}</li> : ""}
           </ul>
         </div>
       </main>
